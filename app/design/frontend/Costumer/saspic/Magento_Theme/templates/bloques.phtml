@@ -1,0 +1,55 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Top menu for store
+ *
+ * @var $block Magento\Framework\View\Element\Template
+ */
+
+
+
+?>
+
+<div class="Banner">
+
+</div>
+
+<nav class="main-nav">
+        <div class="container container--flex">
+
+            <div class="social-icon">
+                <div class="cont-icon">
+                <a href="https://www.facebook.com/profile.php?id=100078432786603" class="social-icon__link">
+                <!-- <img src="{{view url='images/Facebook.png'}}" alt="img" />  --> 
+                <img src="<?= $block->escapeUrl($block->getViewFileUrl('images/Facebook.png')); ?>" />              
+                </a> 
+                </div> 
+                
+                <div class="cont-icon">
+                <a href="" class="social-icon__link">            
+                <img src="<?= $block->escapeUrl($block->getViewFileUrl('images/Twitter.png')); ?>" />              
+                </a>  
+                </div>
+                 
+
+                <div class="cont-icon">
+                <a href="https://www.instagram.com/saspic_/" class="social-icon__link insta">
+                <img src="<?= $block->escapeUrl($block->getViewFileUrl('images/Instagram.png')); ?>" />              
+                </a>  
+                </div>
+                
+            </div>
+            
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="https://magento.test/" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="https://magento.test/nosotros" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            
+        </div>
+    </nav>

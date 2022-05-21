@@ -1,0 +1,448 @@
+@color-naranja: #f57e3e;
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+
+    .page-wrapper {
+        .sections {
+
+            position: absolute;
+            top: 180px;
+            width: 123.9rem;
+            left: 21px;
+            .section-items {
+                .section-item-content {
+                    /* position: absolute;
+                    top: 180px;
+                    width: 86.7%;
+                    left: 94px; */
+
+                    .navigation {
+                        background: @color-naranja;
+
+                        .ui-menu {
+                            .level0 {
+                                .level-top {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .page-header {
+            background-image: url('@{baseDir}images/logoBackgraund.png');
+
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background: rgba(0, 0, 0, 0.7); */
+            background-size: cover;
+
+            height: 319px;
+            width: 100%;
+            background-repeat: repeat;
+
+            .header {
+                .Banner {
+                    position: absolute;
+                    height: 325px;
+                    top: -5px;
+                    left: -32rem;
+                    width: 142%;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+
+                .minicart-wrapper {
+                    z-index: 9;
+
+                    .action {
+                        &::before {
+                            color: @color-naranja;
+                        }
+                    }
+                }
+
+                .main-nav {
+                    margin-top: 85px;
+                    width: 100%;
+                    position: relative;
+
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        background: rgba(0, 0, 0, .9);
+
+                        .social-icon {
+                            display: flex;
+                            justify-content: flex-start;
+                            width: 107px;
+                            height: 65px;
+                            align-items: center;
+
+                            .cont-icon {
+                                margin: 6px;
+                            }
+
+                            .insta {
+                                img {
+                                    width: 134rem;
+                                }
+
+                            }
+                        }
+
+                        .menu {
+                            display: flex;
+                            justify-content: flex-end;
+
+                            left: 0;
+                            width: 88%;
+                            padding: 0;
+                            margin: 0;
+
+                            list-style: none;
+                            text-align: center;
+
+                            .menu__item {
+                                .menu__link {
+                                    display: block;
+                                    padding: 10px;
+                                    font-weight: 800;
+                                    color: white;
+                                    text-decoration: none;
+                                    height: 73%;
+
+                                    &:hover {
+                                        background: @color-naranja;
+                                    }
+                                }
+
+                                .menu__link--select {
+                                    background: @color-naranja;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .page-main {
+            .columns {
+                .column {
+                    .widget {
+
+
+                        .main {
+                            .group-color {
+                                .container {
+                                    background: @color-naranja;
+                                    color: white;
+                                    padding: 10px;
+                                    text-align: center;
+
+                                    .main__title {
+                                        margin: 15px;
+                                        font-size: 1.8em;
+                                        /* font-family: var(--family_pacifico); */
+                                        font-weight: 100;
+                                    }
+                                }
+                            }
+
+                            .main__about__description {
+                                .container--flex {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 100%;
+
+
+                                    img {
+                                        object-fit: cover;
+                                        width: 100%;
+                                        max-width: 100%;
+
+                                        display: block;
+                                        height: 300px;
+                                        margin: 5px;
+                                    }
+
+                                    .column {
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+
+                                    .column--50 {
+                                        padding: 10px;
+                                        width: 48%;
+                                        height: 100%;
+                                        font-size: 1em;
+                                        line-height: 2;
+
+                                        .btn {
+                                            display: block;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 120px;
+                                            background: @color-naranja;
+                                            color: white;
+                                            padding: 10px;
+                                            margin: 10px;
+                                        }
+
+                                        .column__title {
+                                            font-size: 2em;
+                                            /* font-family: @family-name; */
+                                        }
+                                    }
+                                }
+                            }
+
+                            .today-special {
+                                margin-top: 80px;
+                                text-align: center;
+
+                                .group__title {
+                                    font-size: 3em;
+                                    font-weight: 600;
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* @page__background-image:url('../images/Img_logo_SasPic.jpg'); */
+& when (@media-target ='desktop'),
+(@media-target ='all') {
+    @media only screen and (min-width: @screen__m) and (max-width: (@screen__xl - 1)) {
+
+        .page-wrapper {
+            .sections {
+                .section-items {
+                    .section-item-content {
+                        position: absolute;
+                        top: 179px;
+                        width: 71.7%;
+                        left: 245px;
+
+                        .navigation {
+                            background: @color-naranja;
+
+                            .ui-menu {
+                                .level0 {
+                                    .level-top {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .page-header {
+                background-image: url('@{baseDir}images/logoBackgraund.png');
+
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background: rgba(0, 0, 0, 0.7); */
+                background-size: cover;
+
+                height: 319px;
+                width: 100%;
+                background-repeat: repeat;
+
+                .header {
+                    .Banner {
+                        position: absolute;
+                        height: 325px;
+                        top: -5px;
+                        left: -32rem;
+                        width: 200%;
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+
+                    .minicart-wrapper {
+                        z-index: 9;
+
+                        .action {
+                            &::before {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    .main-nav {
+                        margin-top: 85px;
+                        width: 100%;
+                        position: relative;
+
+                        .container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            background: rgba(0, 0, 0, .9);
+
+                            .social-icon {
+                                display: flex;
+                                justify-content: flex-start;
+                                width: 107px;
+                                height: 65px;
+                                align-items: center;
+
+                                .cont-icon {
+                                    margin: 6px;
+                                }
+
+                                .insta {
+                                    img {
+                                        width: 134rem;
+                                    }
+
+                                }
+                            }
+
+                            .menu {
+                                display: flex;
+                                justify-content: flex-end;
+
+                                left: 0;
+                                width: 88%;
+                                padding: 0;
+                                margin: 0;
+
+                                list-style: none;
+                                text-align: center;
+
+                                .menu__item {
+                                    .menu__link {
+                                        display: block;
+                                        padding: 10px;
+                                        font-weight: 800;
+                                        color: white;
+                                        text-decoration: none;
+                                        height: 73%;
+
+                                        &:hover {
+                                            background: @color-naranja;
+                                        }
+                                    }
+
+                                    .menu__link--select {
+                                        background: @color-naranja;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .page-main {
+                .columns {
+                    .column {
+                        .widget {
+
+
+                            .main {
+                                .group-color {
+                                    .container {
+                                        background: @color-naranja;
+                                        color: white;
+                                        padding: 10px;
+                                        text-align: center;
+
+                                        .main__title {
+                                            margin: 15px;
+                                            font-size: 1.8em;
+                                            /* font-family: var(--family_pacifico); */
+                                            font-weight: 100;
+                                        }
+                                    }
+                                }
+
+                                .main__about__description {
+                                    .container--flex {
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 100%;
+
+
+                                        img {
+                                            object-fit: cover;
+                                            width: 100%;
+                                            max-width: 100%;
+
+                                            display: block;
+                                            height: 300px;
+                                            margin: 5px;
+                                        }
+
+                                        .column {
+                                            height: 100%;
+                                            width: 100%;
+                                        }
+
+                                        .column--50 {
+                                            padding: 10px;
+                                            width: 48%;
+                                            height: 100%;
+                                            font-size: 1em;
+                                            line-height: 2;
+
+                                            .btn {
+                                                display: block;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                width: 120px;
+                                                background: @color-naranja;
+                                                color: white;
+                                                padding: 10px;
+                                                margin: 10px;
+                                            }
+
+                                            .column__title {
+                                                font-size: 2em;
+                                                /* font-family: @family-name; */
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .today-special {
+                                    margin-top: 80px;
+                                    text-align: center;
+
+                                    .group__title {
+                                        font-size: 3em;
+                                        font-weight: 600;
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

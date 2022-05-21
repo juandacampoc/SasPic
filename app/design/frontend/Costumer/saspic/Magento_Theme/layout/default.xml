@@ -1,0 +1,21 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceContainer name="header.panel.wrapper" remove="true" /> <!-- ELIMINAR HEADER-TOP  -->
+
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="bloqueNuevo" template="Magento_Theme::bloques.phtml" />
+
+        </referenceContainer>
+
+        <referenceContainer name="footer-container" remove="true" />
+        <referenceBlock name="copyright" remove="true" />
+
+        <!-- <move element="navigation.sections" destination="header-wrapper" after="-" /> --> <!-- MOVER UN BLOQUE A OTRO -->
+
+
+    </body>
+</page>
+       
+
+        

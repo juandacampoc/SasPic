@@ -1,0 +1,20 @@
+.lib-ttf-font-face(
+    @family-name,
+    @font-path,
+    @font-weight: normal,
+    @font-style: normal
+) {
+    @font-face{
+        font-family: 'Pacifico', cursive;
+        src: url('@{font-path}.ttf') format('truetype');
+        font-weight: @font-weight;
+        font-style: @font-style;
+    }
+}
+ 
+.lib-ttf-font-face(
+  @family-name:'Pacifico', cursive,
+  @font-path: '@{baseDir}fonts/<custom-font-file-name>',
+  @font-weight: normal,
+  @font-style: normal
+); 
